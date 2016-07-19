@@ -1,0 +1,7 @@
+.DS_Store
+/VideoPlay/VideoPlay.xcodeproj/project.xcworkspace/
+/VideoPlay/VideoPlay.xcodeproj/xcuserdata/
+/Pods/
+/VideoPlay.xcworkspace/
+VideoPlay.xcworkspace
+Podfile.lock

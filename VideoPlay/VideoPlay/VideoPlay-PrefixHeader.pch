@@ -1,0 +1,32 @@
+//
+//  VideoPlay-PrefixHeader.pch
+//  VideoPlay
+//
+//  Created by 羊谦 on 16/7/18.
+//  Copyright © 2016年 video. All rights reserved.
+//
+
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import <BmobSDK/Bmob.h>
+
+#define VDDevelop
+
+#ifdef VDDevelop
+
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+# define NSLog(...) {}
+
+#endif
+
+#endif

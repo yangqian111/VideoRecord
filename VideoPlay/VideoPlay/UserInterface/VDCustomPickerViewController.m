@@ -9,8 +9,8 @@
 #import "VDCustomPickerViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
-#define kDuration 2.0 //最长录制视频时间 秒
-#define kTrans kApplicationWidth/kDuration/60.0
+#define kDuration 30.0 //最长录制视频时间 秒
+//#define kTrans kApplicationWidth/kDuration/60.0
 
 @interface VDCustomPickerViewController ()<AVCaptureFileOutputRecordingDelegate>{
     AVCaptureSession *_captureSession;
@@ -23,16 +23,22 @@
 }
 
 @property (nonatomic,weak) UIView *videoView;//视频显示层
-@property (nonatomic,weak) UIProgressView *progressView;//录制时间
+@property (nonatomic,weak) UIView *progressView;//录制时间
 @property (nonatomic,weak) UIButton *flashModelBtn;//闪光灯开关
 @property (nonatomic,weak) UIButton *changeBtn;//转换摄像头
 @property (nonatomic,weak) UIButton *videoRecordBtn;//开始停止录影
 @property (nonatomic,weak) UIButton *reRecordBtn;//重新录制
 @property (nonatomic,weak) UIView *focusCircle;//点击聚焦时的光圈动画
+@property (nonatomic,strong) CADisplayLink *link;
 
 @end
 
 @implementation VDCustomPickerViewController
+{
+@private
+    NSURL *_videoURL;//视频地址
+    BOOL _isRecording;//是否正在录制
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -57,13 +63,13 @@
     }];
     self.videoView = videoView;
     
-    UIProgressView *progressView = [UIProgressView new];
-    progressView.progress = 0.5;
-    progressView.tintColor = [UIColor yellowColor];
+    UIView *progressView = [UIView new];
+    progressView.backgroundColor = [UIColor redColor];
     [self.view addSubview:progressView];
     [progressView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.left.right.mas_equalTo(videoView);
+        make.bottom.left.mas_equalTo(videoView);
         make.height.mas_equalTo(10);
+        make.width.mas_equalTo(0);
     }];
     self.progressView = progressView;
     
@@ -108,6 +114,7 @@
     self.changeBtn = changeBtn;
     
     UIButton *videoRecordBtn = [UIButton new];
+    [videoRecordBtn addTarget:self action:@selector(startOrStopRecord) forControlEvents:UIControlEventTouchUpInside];
     videoRecordBtn.layer.cornerRadius = 50;
     videoRecordBtn.layer.masksToBounds = YES;
     videoRecordBtn.backgroundColor = [UIColor lightGrayColor];
@@ -120,7 +127,6 @@
     }];
     self.videoRecordBtn = videoRecordBtn;
 }
-
 
 //获取授权
 - (void)getAuthorization
@@ -181,7 +187,6 @@
     
     //开启会话-->注意,不等于开始录制
     [_captureSession startRunning];
-    
 }
 
 - (void)addSession
@@ -348,13 +353,40 @@
 
 - (void)startRecord
 {
+    
+    //    [self stopLink];
+    //    [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+    [self.videoRecordBtn setTitle:@"暂停" forState:UIControlStateNormal];
     [_movieOutput startRecordingToOutputFileURL:[self outPutFileURL] recordingDelegate:self];
+    _isRecording = YES;
+}
+
+- (void)updateProgress {
+    
+}
+
+- (CADisplayLink *)link
+{
+    if (!_link) {
+        _link = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateProgress)];
+    }
+    return _link;
+}
+
+- (void)stopLink
+{
+    _link.paused = YES;
+    [_link invalidate];
+    _link = nil;
 }
 
 - (void)stopRecord
 {
     // 取消视频拍摄
+    //    [self stopLink];
+    [self.videoRecordBtn setTitle:@"开始" forState:UIControlStateNormal];
     [_movieOutput stopRecording];
+    _isRecording = NO;
 }
 
 //这个在完全退出小视频时调用
@@ -375,6 +407,9 @@
     if (outputFileURL.absoluteString.length == 0 && captureOutput.outputFileURL.absoluteString.length == 0 ) {
         [self showMsgWithTitle:@"出错了" andContent:@"录制视频保存地址出错"];
         return;
+    }
+    if (!_isRecording) {
+        _videoURL = [outputFileURL copy];
     }
 }
 
@@ -555,8 +590,16 @@
     }];
 }
 
-#pragma mark 获取摄像头-->前/后
+#pragma mark - 开始拍摄 停止拍摄
+- (void)startOrStopRecord {
+    if (_isRecording) {
+        [self stopRecord];
+    }else{
+        [self startRecord];
+    }
+}
 
+#pragma mark 获取摄像头-->前/后
 - (AVCaptureDevice *)deviceWithMediaType:(NSString *)mediaType preferringPosition:(AVCaptureDevicePosition)position
 {
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:mediaType];

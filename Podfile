@@ -11,6 +11,5 @@ target ‘VideoPlay’ do
 pod 'Masonry'
 pod 'AFNetworking'
 pod 'Qiniu'
-pod 'BmobSDK'
 
 end

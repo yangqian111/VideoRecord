@@ -21,11 +21,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     VDVideoRecordListViewController *vc = [[VDVideoRecordListViewController alloc] init];
+    //可以隐藏导航栏返回按钮的文字
+    //    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+    //                                                         forBarMetrics:UIBarMetricsDefault];
     UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navc;
     [self.window makeKeyAndVisible];
-    //注册bmob
-    [Bmob registerWithAppKey:@"840f80f86e80b0df2eafdbdef3871cfd"];
     return YES;
 }
 
@@ -36,14 +37,12 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    
 }
 
 @end

@@ -17,7 +17,9 @@
 
 #import "Masonry.h"
 #import "AFNetworking.h"
-#import <BmobSDK/Bmob.h>
+#import <QiniuSDK.h>
+#import "VDCommonUI.h"
+#import "UIView+EXtension.h"
 
 #define VDDevelop
 

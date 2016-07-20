@@ -387,19 +387,6 @@
 }
 
 - (void)uploadVideo {
-    //    NSString *path = _videoURL.absoluteString;
-    NSData *data = [NSData dataWithContentsOfURL:_videoURL];
-    BmobFile *file = [[BmobFile alloc] initWithFileName:_fileName withFileData:data];
-    
-    //    BmobFile *file = [[BmobFile alloc] initWithFilePath:path];
-    [file saveInBackground:^(BOOL isSuccessful, NSError *error) {
-        if (isSuccessful) {
-            NSLog(@"上传成功");
-        }
-    } withProgressBlock:^(CGFloat progress) {
-        NSString *progressStr = [NSString stringWithFormat:@"%.2f",progress];
-        
-    }];
 }
 
 @end

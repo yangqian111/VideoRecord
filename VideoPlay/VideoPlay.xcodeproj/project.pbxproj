@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		49E0A8C5479CE0967518CE4E /* libPods-VideoPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA8166C5677C1B89717D7E9 /* libPods-VideoPlay.a */; };
+		56183A801D3F1A420028CDCF /* QNUploadFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A7F1D3F1A420028CDCF /* QNUploadFileManager.m */; };
+		56183A9E1D3F1E530028CDCF /* NSBundle+EXtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A841D3F1E530028CDCF /* NSBundle+EXtension.m */; };
+		56183A9F1D3F1E530028CDCF /* NSDate+EXtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A861D3F1E530028CDCF /* NSDate+EXtension.m */; };
+		56183AA01D3F1E530028CDCF /* NSDictionary+EXtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A881D3F1E530028CDCF /* NSDictionary+EXtension.m */; };
+		56183AA21D3F1E530028CDCF /* NSString+EXtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A8C1D3F1E530028CDCF /* NSString+EXtension.m */; };
+		56183AA31D3F1E530028CDCF /* UIColor+EXtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A8E1D3F1E530028CDCF /* UIColor+EXtension.m */; };
+		56183AA41D3F1E530028CDCF /* UIDevice+EXtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A901D3F1E530028CDCF /* UIDevice+EXtension.m */; };
+		56183AA51D3F1E530028CDCF /* UIImage+EXtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A921D3F1E530028CDCF /* UIImage+EXtension.m */; };
+		56183AA61D3F1E530028CDCF /* UIScrollView+EXtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A941D3F1E530028CDCF /* UIScrollView+EXtention.m */; };
+		56183AA81D3F1E530028CDCF /* EXFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A981D3F1E530028CDCF /* EXFileManager.m */; };
+		56183AA91D3F1E530028CDCF /* LocalPushCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A9B1D3F1E530028CDCF /* LocalPushCenter.m */; };
+		56183AAA1D3F1E530028CDCF /* NSStringValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183A9D1D3F1E530028CDCF /* NSStringValidation.m */; };
+		56183AAD1D3F26810028CDCF /* EXCallbackHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183AAC1D3F26810028CDCF /* EXCallbackHandle.m */; };
+		56183AB21D3F30FB0028CDCF /* UIView+EXtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 56183AB11D3F30FB0028CDCF /* UIView+EXtension.m */; };
 		56413D6F1D3C81CE008F07F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56413D6E1D3C81CE008F07F2 /* main.m */; };
 		56413D721D3C81CE008F07F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56413D711D3C81CE008F07F2 /* AppDelegate.m */; };
 		56413D881D3C81CE008F07F2 /* VideoPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56413D871D3C81CE008F07F2 /* VideoPlayTests.m */; };
@@ -18,7 +32,6 @@
 		56C681841D3DDEA3000F45C4 /* VDCustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C681831D3DDEA3000F45C4 /* VDCustomPickerViewController.m */; };
 		56C681871D3DF424000F45C4 /* VDMKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C681861D3DF424000F45C4 /* VDMKVideoViewController.m */; };
 		56C6818A1D3DF44C000F45C4 /* VDPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C681891D3DF44C000F45C4 /* VDPostViewController.m */; };
-		56C6818D1D3DF47C000F45C4 /* UIView+RMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C6818C1D3DF47C000F45C4 /* UIView+RMAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +53,36 @@
 
 /* Begin PBXFileReference section */
 		4EA8166C5677C1B89717D7E9 /* libPods-VideoPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideoPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56183A7E1D3F1A420028CDCF /* QNUploadFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUploadFileManager.h; sourceTree = "<group>"; };
+		56183A7F1D3F1A420028CDCF /* QNUploadFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUploadFileManager.m; sourceTree = "<group>"; };
+		56183A831D3F1E530028CDCF /* NSBundle+EXtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+EXtension.h"; sourceTree = "<group>"; };
+		56183A841D3F1E530028CDCF /* NSBundle+EXtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+EXtension.m"; sourceTree = "<group>"; };
+		56183A851D3F1E530028CDCF /* NSDate+EXtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+EXtension.h"; sourceTree = "<group>"; };
+		56183A861D3F1E530028CDCF /* NSDate+EXtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+EXtension.m"; sourceTree = "<group>"; };
+		56183A871D3F1E530028CDCF /* NSDictionary+EXtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+EXtension.h"; sourceTree = "<group>"; };
+		56183A881D3F1E530028CDCF /* NSDictionary+EXtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+EXtension.m"; sourceTree = "<group>"; };
+		56183A8B1D3F1E530028CDCF /* NSString+EXtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EXtension.h"; sourceTree = "<group>"; };
+		56183A8C1D3F1E530028CDCF /* NSString+EXtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EXtension.m"; sourceTree = "<group>"; };
+		56183A8D1D3F1E530028CDCF /* UIColor+EXtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+EXtension.h"; sourceTree = "<group>"; };
+		56183A8E1D3F1E530028CDCF /* UIColor+EXtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+EXtension.m"; sourceTree = "<group>"; };
+		56183A8F1D3F1E530028CDCF /* UIDevice+EXtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+EXtension.h"; sourceTree = "<group>"; };
+		56183A901D3F1E530028CDCF /* UIDevice+EXtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+EXtension.m"; sourceTree = "<group>"; };
+		56183A911D3F1E530028CDCF /* UIImage+EXtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+EXtension.h"; sourceTree = "<group>"; };
+		56183A921D3F1E530028CDCF /* UIImage+EXtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+EXtension.m"; sourceTree = "<group>"; };
+		56183A931D3F1E530028CDCF /* UIScrollView+EXtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EXtention.h"; sourceTree = "<group>"; };
+		56183A941D3F1E530028CDCF /* UIScrollView+EXtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EXtention.m"; sourceTree = "<group>"; };
+		56183A971D3F1E530028CDCF /* EXFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXFileManager.h; sourceTree = "<group>"; };
+		56183A981D3F1E530028CDCF /* EXFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXFileManager.m; sourceTree = "<group>"; };
+		56183A991D3F1E530028CDCF /* EXUtilImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXUtilImport.h; sourceTree = "<group>"; };
+		56183A9A1D3F1E530028CDCF /* LocalPushCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalPushCenter.h; sourceTree = "<group>"; };
+		56183A9B1D3F1E530028CDCF /* LocalPushCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalPushCenter.m; sourceTree = "<group>"; };
+		56183A9C1D3F1E530028CDCF /* NSStringValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringValidation.h; sourceTree = "<group>"; };
+		56183A9D1D3F1E530028CDCF /* NSStringValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringValidation.m; sourceTree = "<group>"; };
+		56183AAB1D3F26810028CDCF /* EXCallbackHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXCallbackHandle.h; sourceTree = "<group>"; };
+		56183AAC1D3F26810028CDCF /* EXCallbackHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXCallbackHandle.m; sourceTree = "<group>"; };
+		56183AAF1D3F2D8F0028CDCF /* VDCommonUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDCommonUI.h; sourceTree = "<group>"; };
+		56183AB01D3F30FB0028CDCF /* UIView+EXtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EXtension.h"; sourceTree = "<group>"; };
+		56183AB11D3F30FB0028CDCF /* UIView+EXtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EXtension.m"; sourceTree = "<group>"; };
 		56413D6A1D3C81CE008F07F2 /* VideoPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56413D6E1D3C81CE008F07F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56413D701D3C81CE008F07F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,8 +106,6 @@
 		56C681861D3DF424000F45C4 /* VDMKVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDMKVideoViewController.m; sourceTree = "<group>"; };
 		56C681881D3DF44C000F45C4 /* VDPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDPostViewController.h; sourceTree = "<group>"; };
 		56C681891D3DF44C000F45C4 /* VDPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDPostViewController.m; sourceTree = "<group>"; };
-		56C6818B1D3DF47C000F45C4 /* UIView+RMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RMAdditions.h"; sourceTree = "<group>"; };
-		56C6818C1D3DF47C000F45C4 /* UIView+RMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RMAdditions.m"; sourceTree = "<group>"; };
 		94AD31796E52A2C3269B098E /* Pods-VideoPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlay.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-VideoPlay/Pods-VideoPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		CE7FD921F8257B6C67308169 /* Pods-VideoPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlay.release.xcconfig"; path = "../Pods/Target Support Files/Pods-VideoPlay/Pods-VideoPlay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +145,65 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		56183A7D1D3F1A110028CDCF /* CoreModule */ = {
+			isa = PBXGroup;
+			children = (
+				56183A7E1D3F1A420028CDCF /* QNUploadFileManager.h */,
+				56183A7F1D3F1A420028CDCF /* QNUploadFileManager.m */,
+			);
+			path = CoreModule;
+			sourceTree = "<group>";
+		};
+		56183A811D3F1E530028CDCF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				56183A821D3F1E530028CDCF /* Category */,
+				56183A971D3F1E530028CDCF /* EXFileManager.h */,
+				56183A981D3F1E530028CDCF /* EXFileManager.m */,
+				56183AAB1D3F26810028CDCF /* EXCallbackHandle.h */,
+				56183AAC1D3F26810028CDCF /* EXCallbackHandle.m */,
+				56183A991D3F1E530028CDCF /* EXUtilImport.h */,
+				56183A9A1D3F1E530028CDCF /* LocalPushCenter.h */,
+				56183A9B1D3F1E530028CDCF /* LocalPushCenter.m */,
+				56183A9C1D3F1E530028CDCF /* NSStringValidation.h */,
+				56183A9D1D3F1E530028CDCF /* NSStringValidation.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		56183A821D3F1E530028CDCF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				56183AB01D3F30FB0028CDCF /* UIView+EXtension.h */,
+				56183AB11D3F30FB0028CDCF /* UIView+EXtension.m */,
+				56183A831D3F1E530028CDCF /* NSBundle+EXtension.h */,
+				56183A841D3F1E530028CDCF /* NSBundle+EXtension.m */,
+				56183A851D3F1E530028CDCF /* NSDate+EXtension.h */,
+				56183A861D3F1E530028CDCF /* NSDate+EXtension.m */,
+				56183A871D3F1E530028CDCF /* NSDictionary+EXtension.h */,
+				56183A881D3F1E530028CDCF /* NSDictionary+EXtension.m */,
+				56183A8B1D3F1E530028CDCF /* NSString+EXtension.h */,
+				56183A8C1D3F1E530028CDCF /* NSString+EXtension.m */,
+				56183A8D1D3F1E530028CDCF /* UIColor+EXtension.h */,
+				56183A8E1D3F1E530028CDCF /* UIColor+EXtension.m */,
+				56183A8F1D3F1E530028CDCF /* UIDevice+EXtension.h */,
+				56183A901D3F1E530028CDCF /* UIDevice+EXtension.m */,
+				56183A911D3F1E530028CDCF /* UIImage+EXtension.h */,
+				56183A921D3F1E530028CDCF /* UIImage+EXtension.m */,
+				56183A931D3F1E530028CDCF /* UIScrollView+EXtention.h */,
+				56183A941D3F1E530028CDCF /* UIScrollView+EXtention.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		56183AAE1D3F2D5C0028CDCF /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				56183AAF1D3F2D8F0028CDCF /* VDCommonUI.h */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
 		56413D611D3C81CD008F07F2 = {
 			isa = PBXGroup;
 			children = (
@@ -129,10 +229,12 @@
 		56413D6C1D3C81CE008F07F2 /* VideoPlay */ = {
 			isa = PBXGroup;
 			children = (
+				56183A7D1D3F1A110028CDCF /* CoreModule */,
 				56413D701D3C81CE008F07F2 /* AppDelegate.h */,
 				56413D711D3C81CE008F07F2 /* AppDelegate.m */,
 				56413DA41D3C8729008F07F2 /* UserInterface */,
 				56413DA01D3C8729008F07F2 /* NetWork */,
+				56183A811D3F1E530028CDCF /* Util */,
 				56413DA11D3C8729008F07F2 /* Resource */,
 				56413D6D1D3C81CE008F07F2 /* Supporting Files */,
 			);
@@ -185,8 +287,7 @@
 		56413DA41D3C8729008F07F2 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				56C6818B1D3DF47C000F45C4 /* UIView+RMAdditions.h */,
-				56C6818C1D3DF47C000F45C4 /* UIView+RMAdditions.m */,
+				56183AAE1D3F2D5C0028CDCF /* CommonUI */,
 				56413DA51D3C8729008F07F2 /* VDImagePickerViewController.h */,
 				56413DA61D3C8729008F07F2 /* VDImagePickerViewController.m */,
 				56C6817F1D3DDCFE000F45C4 /* VDVideoRecordListViewController.h */,
@@ -390,13 +491,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56183AAD1D3F26810028CDCF /* EXCallbackHandle.m in Sources */,
+				56183A9E1D3F1E530028CDCF /* NSBundle+EXtension.m in Sources */,
 				56C681841D3DDEA3000F45C4 /* VDCustomPickerViewController.m in Sources */,
-				56C6818D1D3DF47C000F45C4 /* UIView+RMAdditions.m in Sources */,
+				56183AA21D3F1E530028CDCF /* NSString+EXtension.m in Sources */,
+				56183AA31D3F1E530028CDCF /* UIColor+EXtension.m in Sources */,
+				56183AA41D3F1E530028CDCF /* UIDevice+EXtension.m in Sources */,
+				56183AA51D3F1E530028CDCF /* UIImage+EXtension.m in Sources */,
+				56183A9F1D3F1E530028CDCF /* NSDate+EXtension.m in Sources */,
+				56183AAA1D3F1E530028CDCF /* NSStringValidation.m in Sources */,
 				56413DA91D3C8729008F07F2 /* VDImagePickerViewController.m in Sources */,
 				56C681871D3DF424000F45C4 /* VDMKVideoViewController.m in Sources */,
 				56C681811D3DDCFE000F45C4 /* VDVideoRecordListViewController.m in Sources */,
 				56413D721D3C81CE008F07F2 /* AppDelegate.m in Sources */,
+				56183AB21D3F30FB0028CDCF /* UIView+EXtension.m in Sources */,
 				56C6818A1D3DF44C000F45C4 /* VDPostViewController.m in Sources */,
+				56183A801D3F1A420028CDCF /* QNUploadFileManager.m in Sources */,
+				56183AA61D3F1E530028CDCF /* UIScrollView+EXtention.m in Sources */,
+				56183AA91D3F1E530028CDCF /* LocalPushCenter.m in Sources */,
+				56183AA01D3F1E530028CDCF /* NSDictionary+EXtension.m in Sources */,
+				56183AA81D3F1E530028CDCF /* EXFileManager.m in Sources */,
 				56413D6F1D3C81CE008F07F2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

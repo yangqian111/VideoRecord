@@ -9,7 +9,6 @@
 #import "VDMKVideoViewController.h"
 #import "VDPostViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "UIView+RMAdditions.h"
 
 
 #define kDuration 6.0
